@@ -1,0 +1,84 @@
+Day7:
+=====
+Python Tokens:
+==============
+Token is a piece of python code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constants
+6.Datatype
+7.Operators
+8.Control Statements
+___________________________________________________________________
+str datatype:
+=============
+Def:
+	collection of characters is referred as string
+	Or
+	array of characters is referred as string
+
+Representation of string:
+_________________________
+Acc C	:	char	name[3]={'R','a','m'};
+Acc Java:	String	name="Ram";
+Acc python:
+	1.Single Line strings	{",'}
+		name1="Ajay" 
+		name2='Ajay'
+	2.Multi Line strings	{""",'''}
+		msg1="""	Hi
+				How
+				Are
+				You	"""
+		Or
+		msg2='''	Hi
+				How
+				Are
+				You	'''
+		
+Type Conversion:
+================
+Following functions helps to Converting data from one type to another.
+
+	1.int()		:	converts data into int format
+	2.float()	:	converts data into float format
+	3.str()		:	converts data into string format
+	4.bool()	:	converts data into boolean format
+	5.complex()	:	converts data into complex format
+
+Input & Output functions in Python:
+===================================
+			Output function		Input function
+			++++++++++++++++	++++++++++++++
+C language		printf()		scanf()
+
+Python language		print()			input()
+
+
+print()	:
+=========	
+	Using this function we can write data into console screen
+Ex:
+	print("Welcome")
+
+syntax:
+	print(object,sep=,end=)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

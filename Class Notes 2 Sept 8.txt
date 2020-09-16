@@ -1,0 +1,22 @@
+Day2:
+=====
+What is Python ?
+________________
+
+1.Developer Name	: Guido Van Rossum
+2.Released Year		: 1991
+3.Official site		: www.python.org
+4.Name history		: A comedy show "Monty Python Flying Circus" in BBC
+5.Stable release	: 3.x (3.8.5)
+6.Type of language	: Multi-paradigm	
+
+Q1.What we can get from Official site i.e	www.python.org
+	->Free			:	Download	the Software 
+	->OpenSource		:	Source Code can read,reuse
+	->Job			:	Job offer
+	->Documentation		:	Doc
+	->Community		:	FAQs
+	->Types of applications	:	Web,GUI,ML,...
+	->Libraries related tech :	Django,Tkteiter,
+		
+

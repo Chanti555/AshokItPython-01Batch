@@ -1,0 +1,149 @@
+Day6:
+=====
+Python Tokens:
+==============
+Token is a piece of python code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constants
+6.Datatype
+7.Operators
+8.Control Statements
+___________________________________________________________________
+
+5.Constants:
+============
+Def:	A constant is a register which value cannot be varies
+	A constant naming convention is :Must be prepared in UPPER CASE
+
+Procedure to create constant:
+
+>>>from collections import namedtuple
+>>>myconstants=namedtuple('constants',['PI','GRAVITY'])
+>>>constant=myconstants(3.14,9.8)
+>>>constant.PI
+3.14
+
+
+Comments in Python:
+====================
+USE:	Source Code readability
+	->Not compiled with the source code
+	->Not allocate space with the source code
+
+1.Acc to C/Cpp/Java language:
+
+	1.single line comment	:	//comment
+	2.multi line comment	:	/*
+						comments
+					*/
+
+2.Acc to Python language:
+
+	1.single line comment	:	#comment
+	2.multi line comment	:	"""
+						comments
+					"""
+					OR
+					'''
+						comments
+					'''
+
+
+
+6.Datatypes:
+============
+->Python is dynamically typed programming language
+->type() function	=>Returns type of data inside register
+			=>"Returns class name of an object"
+->id() function		=>"Returns address of an object"
+Ex:
+	a=10
+	type(a)		#<class 'int'>
+	b=20
+	type(b)		#<class 'float'>
+
+->Every datatype in python is treated as a class
+->In above code a is object of int class
+->In above code b is object of float class
+
+Types of datatypes:
+===================
+1.Basic Datatypes:
+__________________
+	Def:	they can store single value in a varaible
+
+Ex:
+	urage			=		21
+	urheight		=		5.9
+	urname			=		"Ram"
+Q1.How many Basic Datatypes are available in Python ?
+Ans:
+	1.int
+	2.float
+	3.bool
+	4.complex
+	5.str
+
+2.Collection Datatypes:
+_______________________
+	Def:	they can store multi values in a variable
+Ex:
+	ages	=[51,57,21,18]
+	heights	=[5.8,4.9,5.2,4.3]
+
+Q2.How many Collection Datatypes are available in Python ?
+Ans:
+	1.List			[elements]
+	2.Tuple			(elements)
+	3.Set			{elements}
+	4.Dictinary		{key:value,....}
+	5.Arrays		array([i],[elements])
+	
+
+1.int datatype:
+===============
+			Representation	Digits		Base
+
+1.Binary Numbers	0b 1011110	0,1		2
+2.Octal Numbers		0o 13		0,1,..7		8
+3.Decimal Numbers	56		0,1,..9		10
+4.Hexa decimal Numbers	0x 25		0,1,..9,A,..F	16
+
+
+2.float datatype:
+================
+	height=5.8
+	amount=45000.57
+
+3.bool datatype:
+=================
+	married=True
+	status=False
+	
+4.complex datatype:
+===================
+	variablename=(real)+(imaginary)j
+
+5.str datatype:
+===============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

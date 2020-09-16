@@ -1,0 +1,97 @@
+Day5:
+=====
+Python Tokens:
+==============
+Token is a piece of python code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constants
+6.Datatype
+7.Operators
+8.Control Statements
+___________________________________________________________________
+
+1.Literal	:A literal is a value which is stored into register
+2.Identifier	:An Identifier is a name which is given to the register
+3.Variable	:A variable is a register which value can be varies
+4.Constant	:A constant is a register which value cannot be varies
+=========================================================================
+Identifier:
+___________
+	An Identifier is a name which is given to the register.
+	A register can be a 
+		variable
+		constant
+		function
+		class
+		object
+		..
+	To delcare an Identifier their exist some rules 
+
+Rule1:	An identifier must prepared by using following character set combination only
+	1.Alphabets		(a,z,A,Z)
+	2.Digits		(0-9)
+	3.Special Character	(_)
+
+Rule2: An identifier must not be a only digit
+			
+	
+3.Variable:
+===========
+	A variable is a register which value can be varies
+syntax:
+	variablename=value
+
+Note:
+_____
+1.C,Cpp,Java,C#.Net languages are statically typed programming languages: 
+	Step1: declare type of variable
+		int	x;
+		float	y;
+	Step2: assign value to a variable based on type	
+		x=25;	
+		y=3.6F;
+2.Python language is a dynamically typed programming language:
+	Step1:Assign a value to variable
+	Step2:Based on value which is assigned the type is decided
+Ex:	
+	x=25
+	type(x)		#int
+	x=6.3
+	type(x)		#float
+	x='Chanti'
+	type(x)		#str
+	x=True
+	type(x)		#bool	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

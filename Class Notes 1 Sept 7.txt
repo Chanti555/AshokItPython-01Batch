@@ -1,0 +1,23 @@
+Trainer Name	->	Mr: Chanti 
+Course		->	Python	(Core+Adv)
+Duration	->	15-20 Days for Core Python
+____________________________________________________
+Today Topic: Introduction to Python
+
+Reasons to Learn Python in 2020 :
+================================
+
+Program in Any Language= Common Logic + Specific Logic
+
+PS1:Print Hello On Console
+			Common Logic  		Specific Logic
+
+Other Languages	:	70%			30%
+
+Python Language	:	0%			100%
+
+
+
+
+
+

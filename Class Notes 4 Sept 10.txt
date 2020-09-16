@@ -1,0 +1,101 @@
+Day4:
+=====
+Q1.Difference between Interactive Mode Vs Batch Mode:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+->Interactive Mode(Shell) can be selected when user want to test piece of code
+  which not saved  for future purpose
+	>>>a=10
+	>>>b=20
+	>>>c=a+b
+	>>>print(c)
+
+->Batch Mode(IDLE) can be selected when user want to test group of code
+  which is saved for future purpose
+	
+	a=10
+	b=20
+	c=a+b
+	print(c)
+	
+	Save	->	demo.py
+	Run	->	F5
+
+
+
+Q2.How to use libraries in Python ?
+===================================
+Ans:
+1.libraries in C(headerfiles)	:	
+================================
+	stdio.h,math.h,string.h..
+USE:	
+	printf(),scanf(),getc(),putc(),..........	=>	#include<stdio.h>
+	sqrt(),sin(),cos(),...				=>	#include<math.h>
+
+Note:
+"#include<math.h>"	=> Here all math.h functions can be used in main() function
+
+2.libraries in Python(modules):	
+===============================
+	math,keyword,threading,time,...
+USE:
+	sqrt(),sin(),cos(),...	150			=>	import	math
+
+Note:
+"import	math"			=> Here all math module functions can be used in python program
+"from math import sqrt,sin"	=> Here sqrt,sin functions can be used in python program from math module
+
+Python Tokens:
+==============
+Token is a piece of python of code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constant
+6.Datatype
+7.Operators
+8.Control Statement
+___________________________________________________________________
+1.Keywords:
+===========
+Def:	
+	A keyword is a reserved word whcih is used in specific purpose in code
+
+To know python keywords in current version, type following 2 commands in python shell.
+
+	>>>import	keyword
+	>>>keyword.kwlist
+
+List:
+=====
+[
+	'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 
+	'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 
+	'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 
+	'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
+]
+
+Note:
+====
+All keywords are in python must be represented in lowercase except 3('False', 'None', 'True').
+These 3 are treated as Keywords & Literals.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
