@@ -1,0 +1,164 @@
+Day9:
+=====
+Python Tokens:
+==============
+Token is a piece of python code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constants
+6.Datatype
+7.Operators
+8.Control Statements
+___________________________________________________________________
+
+7.Operators:
+============
+Expression:	c=a+b
+		a,b,c	=>Operands
+		+,+	=>Operators
+Def:
+	Operators are used between operands to perform a specific operation
+Types:
+	1.Arithmetic		(+,-,*,**,/,//,%)
+	2.Assignment		(=)
+	3.Relational		(<,>,<=,>=,==,!=)
+	4.Logical keywords	(and,or,not)
+	5.Bitwise		(&,|,^,<<,>>,~)
+	6.Special operators
+		1.Identity operators	(is,is not)
+		2.Membership operator	(in,not in)
+
+Logical keywords are used between conditions.
+
+	C1	C2		C1 and C2	C1 or C2	not C1
+
+	True	True		True		True		False	
+	True	False		False		True		False
+	False	True		False		True		True
+	False	False		False		False		True
+______________________________________________________________________
+Logical keywords Example:
+	
+#PS1:Check given FB details are valid or not for login
+#userid=chanti pswd=ashokit
+userid=input('Enter FB UserId:')
+pswd=input('Enter FB Password:')
+
+if userid=='chanti' and pswd=='ashokit':
+    print('You Login Successfully')
+else:
+    print('Userid or pswd not valid')
+______________________________________________________________________
+5.Bitwise Operators:	(&,|,^,<<,>>,~)
+____________________
+
+Decimal <-> Binary :
+====================
+
+....		2^6	2^5  	2^4 	2^3 	2^2 	2^1 	2^0
+
+....		64	32	16	8	4	2	1
+
+D->B
+d1=7		0	0	0	0	1	1	1
+d2=12		0	0	0	1	1	0	0
+d3=18
+d4=29
+
+
+
+B->D			
+b1=1010					1	0	1	0	=10
+b2=10110			1	0	1	1	0	=22
+b3=11011
+b4=11101
+
+
+		and		or		xor
+
+b1	b2	b1 & b2		b1 | b2		b1 ^ b2
+
+1	1	1		1		0
+1	0	0		1		1
+0	1	0		1		1
+0	0	0		0		0
+
+
+n1=14		1	1	1	0
+n2=9		1	0	0	1
+
+n1&n2		1	0	0	0	=>	8
+n1|n2		1	1	1	1	=>	15
+n1^n2		0	1	1	1	=>	7
+
+
+<<	(Left Shift):
+=====================
+n1=14	
+Q:   n1 <<2  ?
+Ans: 	trick:	number * 2 ^ shift
+	ans:    14 * 2 ^ 2	=>	14 * 4 	
+
+>>	(Right Shift):
+=====================
+n1=14
+Q:	n1 >> 3 ?
+Ans:	trick:	number / 2 ^ shift
+	ans:    14 /  2 ^ 3	=>	14 / 8
+
+~ (Complement):
+===============
+n1=14
+Q:   ~n1  ? 
+Ans:  	trick:	(+/-)(number+1)
+	ans:	-15
+
+
+Bitwise Operators Example:
+==========================
+n1=14
+n2=9
+print(n1&n2)
+print(n1|n2)
+print(n1^n2)
+print(n1<<2)
+print(n1>>3)
+print(~n1)
+print(~n2)
+
+
+6.Special operators example:
+===========================
+	
+#1.Identity operators	(is,is not)
+a,b,c=10,20,10
+print(id(a),id(b),id(c))
+print(a is b) #False
+print(a is c) #True
+print(a is not b) #True
+print(a is not c) #False
+
+#2.Membership operator	(in,not in)
+paytm=[949098491,9849098492,9849098493]
+print(9849098492 in paytm)#True
+new=9533260955
+print(new not in paytm)#True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
