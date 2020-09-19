@@ -1,0 +1,153 @@
+Day10:
+=====
+Python Tokens:
+==============
+Token is a piece of python code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constants
+6.Datatype
+7.Operators
+8.Control Statements
+___________________________________________________________________
+
+8.Flow Control Statements:
+==========================
+
+1. Decision Making Statements
+	1.if
+	2.if-else
+	3.elif
+
+2. Loop Statements
+	1.while 
+	2.for
+
+3. Jump Statements
+	1.break
+	2.continue
+__________________________________________________________________________________
+
+Decision Making Statements:
++++++++++++++++++++++++++++
+1.if
+Def:	Using this keyword we can test condition in True case only
+syntax:
+	if	condition:
+		statement[s]
+
+
+#Program for IF
+#PS1: Check given number is zero or not
+num=int(input('Enter n value:'))
+if num==0:
+    print('if begins')
+    print('You entered is zero')
+    print('if closed')
+print('Out Of IF')
+
+
+2.if-else
+Def:	Using these keywords we can test a condition in True & False cases
+syntax:
+	if	condition:
+		statements[setA]
+	else:
+		statements[setB]
+
+#Program for IF-ELSE
+#PS2: Check given number is +ve or -ve
+num=int(input('Enter n value:'))
+if num>0:
+    print('if begins')
+    print('You entered Positive Number')
+    print('if closed')
+else:
+    print('else begins')
+    print('You entered Negative Number')
+    print('else closed')
+print('Out Of IF-ELSE')
+    
+3.elif:(nested if else in C & Java)
+=======
+Def:	Using this keywords we can test multiple conditions in True & False cases
+	with dependency
+syntax:
+	if	condition1:
+		statements[setA]
+	elif	condition2:
+		statements[setB]
+	elif	condition3:
+		statements[setC]
+	..
+	else:
+		statements[setX]
+
+#Program for ELIF
+#PS3: Check given number is zero or +ve or -ve
+num=int(input('Enter n value:'))
+if num==0:
+    print('if begins')
+    print('You entered ZERO Number')
+    print('if closed')
+elif num>0:
+    print('elif begins')
+    print('You entered Positive Number')
+    print('elif closed')
+else:
+    print('else begins')
+    print('You entered Negative Number')
+    print('else closed')
+print('Out Of ALL IF-ELSE')
+    
+Program on ELIF:
+================
+Task1:Biggest of 2 numbers
+Task2:Biggest of 3 numbers 
+Task3:Accept 5 marks from console and print following results	: 78 32 55 66 99	
+	1.total marks
+	2.average marks
+	3.grade
+		A grade	:	avg above 70
+		B grade :	avg between 70 & 60
+		C grade :	avg between 60 & 50
+		D grade	:	avg below 50
+	4.results of all subjects
+		PASS	:	if all subjects secured above 35
+		FAIL	:	if any one subject secured below 35
+	5.result of each subject
+		S1 is Pass
+		S2 is Fail
+	6.Lowest secured subject	:sub2
+	7.Highest secured subject	:sub5
+	8.Print even marks		:78	32	66
+	9.Print odd marks		:55	99
+Task4:Accept a numbers & print how many digit number it is ?
+Task5:Accept a character & print wether it is vowel or digit or space or consonant ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
