@@ -1,0 +1,190 @@
+Day11:
+=====
+Python Tokens:
+==============
+Token is a piece of python code which can be a
+1.Keyword
+2.Identifier
+3.Literal
+4.Variable
+5.Constants
+6.Datatype
+7.Operators
+8.Control Statements
+___________________________________________________________________
+
+8.Flow Control Statements:
+==========================
+
+1. Decision Making Statements
+	1.if
+	2.if-else
+	3.elif
+
+2. Loop Statements
+	1.while 
+	2.for
+
+3. Jump Statements
+	1.break
+	2.continue
+__________________________________________________________________________________
+2. Loop Statements:
+===================
+Def:
+	Loop is a iteration process in which set of statements
+	gets executed repeatedly until given condition fails.
+
+Types:
+
+1.while loop
+2.for loop
+
+1.while loop:
+_____________
+Loop Factors:
+
+1.Loop begining point	/initialization
+2.Loop ending point	/condition
+3.Loop statements
+4.Increment/Decrement
+
+
+PS1: print 1 to 10
+
+1.Loop begining point	:	i=1
+2.Loop ending point	:	i<=10	
+3.Loop statements	:	print(i)
+4.Increment/Decrement	:	i=i+1
+
+Code:
+_____
+#ps1: print 1 to 10
+i=1
+while i<=10:
+    print(i)
+    i=i+1
+print('end loop')
+
+PS2: print 10 to 1
+
+1.Loop begining point	:	i=10
+2.Loop ending point	:	i>=1	
+3.Loop statements	:	print(i)
+4.Increment/Decrement	:	i=i-1
+
+PS3: print 0,2,4,6,8,...20
+
+1.Loop begining point	:	i=0
+2.Loop ending point	:	i<=20	
+3.Loop statements	:	print(i)
+4.Increment/Decrement	:	i=i+2
+
+
+PS4: print 50,45,40,....1
+
+1.Loop begining point	:	i=50
+2.Loop ending point	:	i>=1
+3.Loop statements	:	print(i)
+4.Increment/Decrement	:	i=i-5
+
+PS5: print 9,7,5,3,1
+PS6: Reverse of a number
+PS7: Check Palindrome number
+PS8: Check Armstrong number
+
+syntax for while:
+________________
+
+initialization
+while	condition :
+	statements
+	inc/dec
+__________________________________________________________________________
+2.for loop:
+-----------
+syntax1:for loop used to print series of elements
+
+	for	variable	in	range(arg):
+		#body of for loop
+
+syntax2:for loop used to print element by element from Collections
+		(List,Set,Tuple,Dinct,Arrays,String,Files)
+
+	for	variable	in	CollectionName:
+		#body of for loop
+
+___________________________________________________________________________
+syntax1:for loop used to print series of elements
+
+	for	variable	in	range(arg):
+		#body of for loop
+
+case1:    range(n)   :  0 to n-1
+          range(5)   :  0,1,2,3,4
+
+case2:    range(m,n) : m to n-1
+          range(2,8)   : 2,3,4,5,6,7
+
+case3:    range(m,n,+/-step) : m to n-1 & step may be increment or decrement series
+          range(1,11,+2)     : 1,3,5,7,9
+
+#1) Print 0 to 6
+for i in range(7):
+    print(i)
+
+#2) Print 2 to 6
+for i in range(2,7):
+    print(i)
+
+#3) Print 1,3,5,7,9
+for i in range(1,10,+2):
+    print(i)
+
+#4) Print 19,17,15,13,11,9,7
+for i in range(19,6,-2):
+    print(i)
+
+PS1:0 to 10
+PS2:0 to 20
+PS3:10 to 20
+PS4:10,15,20,25,....50
+PS5:100,90,80,....20
+
+syntax2:for each examples
+
+ages=[25,21,20,22,21,25,26]
+for age in ages:
+    print(age)
+
+country="INDIA"
+for i in country:
+    print(i)
+
+
+3. Jump Statements example
+	1.break
+	2.continue
+
+series=[1,2,3,4,5,6,7,8,9,10]
+for i in series:
+    if i==6:
+        continue
+    else:
+        print(i) #break =>  1,2,3,4,5    #continue =>  1,2,3,4,5,7,8,9,10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
