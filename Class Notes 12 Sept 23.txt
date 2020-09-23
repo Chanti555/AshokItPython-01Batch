@@ -1,0 +1,86 @@
+Day12:
+======
+1.Non-Functional Programming Vs Functional Programming
+2.Non-Functional Programming Drawbacks
+3.Functional Programming Advantages
+4.Function definition , preparation & usage 
+
+Non-Functional Programming Drawbacks:
+=====================================
+1) Duplication of code
+2) More Space & Time Complexicity
+3) Less Readability
+4) No Modularity	(Dividing main program into sub program)
+5) Extensibilty is difficult
+
+Ex:
+---
+#ps1:Perform deposit operation in banking :   Non-Functional Programming
+dbamount=15000
+deposit_amount=int(input('Enter amount to deposit :'))
+dbamount=dbamount+deposit_amount
+print('Total Balance is:',dbamount)
+deposit_amount=int(input('Enter amount to deposit :'))
+dbamount=dbamount+deposit_amount
+print('Total Balance is:',dbamount)
+deposit_amount=int(input('Enter amount to deposit :'))
+dbamount=dbamount+deposit_amount
+print('Total Balance is:',dbamount)
+deposit_amount=int(input('Enter amount to deposit :'))
+dbamount=dbamount+deposit_amount
+print('Total Balance is:',dbamount)
+deposit_amount=int(input('Enter amount to deposit :'))
+dbamount=dbamount+deposit_amount
+print('Total Balance is:',dbamount)
+
+Function Definition:
+====================
+A function is a set/block of statements which performs a specific operation.
+
+Called function/Function Preparation syntax:
+___________________________________________
+def	functionname(parameterlist):
+	#statement1
+	#statement2
+	...
+	return	value
+
+Calling function/Function Usage syntax:
+______________________________________
+	functionname(parameterlist)
+
+
+Functional Programming Advantages:
+=====================================
+1) No Duplication of code	(Reusability of code)
+2) Less Space & Time Complexicity
+3) More Readability
+4) Modularity	(Dividing main program into sub program)
+5) Extensibilty is easy
+
+Ex:
+===
+#ps1:Perform deposit operation in banking :   Functional Programming
+#Function preparation or Called/Caller Function
+def deposit():
+    dbamount=15000
+    deposit_amount=int(input('Enter amount to deposit :'))
+    dbamount=dbamount+deposit_amount
+    print('After deposit,Total Balance is:',dbamount)
+def withdraw():
+    dbamount=15000
+    withdraw_amount=int(input('Enter amount to withdraw :'))
+    if withdraw_amount>dbamount:
+        print('Tx failed due to insufficient funds: Please enter amount less than ',dbamount)
+    else:
+        dbamount=dbamount-withdraw_amount
+        print('After withdraw,Total Balance is:',dbamount)
+#Function usage or Calling Function
+deposit()
+withdraw()
+
+
+
+
+
+
