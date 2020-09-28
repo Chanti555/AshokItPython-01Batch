@@ -1,0 +1,234 @@
+Day14:
+======
+Functional Programming in Python:
+==================================
+1.Non-Functional Programming Vs Functional Programming
+2.Non-Functional Programming Drawbacks
+3.Functional Programming Advantages
+4.Function definition , preparation & usage 
+
+Next Topics in Python Functions:
+********************************
+1.Function return type & parameter list 
+	1.Actual  Argument		
+	2.Formal paramaters/Positional  paramaters	
+2.Function preparation ways
+	4 approaches
+3.Local Vs Global variables & global(1) keyword  , pass(2) keyword
+4.keyword as argument		(keyword=value,..)	
+5.non-default parameter & default parameter
+6.arbitary parameters / variable length arguments	(* operator)
+7.lambda functions /anonymous function
+_____________________________________Upto class 14_________________
+8.function address
+9.aliasing function
+10.nested / inner functions
+11.argument as function
+12.return type as function
+13.decorators			(*****)
+14.function vs method
+15.main function
+16.recursion
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3.Local Vs Global variables & global keyword:
+____________________________________________
+
+Ex3:Demonstartes Local Vs Global variables & global keyword
+
+z=10  #z is global to all functions
+def one():
+    x=10 #x is local to one()
+    global z
+    z=z+x
+    print('one:  x=',x,' z=',z)
+def two():
+    y=10 #y is local to two()
+    global z
+    z=z+y
+    print('two:  y=',y,' z=',z)
+
+one()
+print('-------------------------------')
+two()
+
+
+Ex4:Atm application(Local Vs Global variables & global keyword)
+
+
+#Atm: balance check, withdraw, deposit
+accno=101
+amount=4500
+def balance_check():
+    print(accno,' Account having ',amount,' Balance')
+
+def deposit(da):
+    print('trying to deposit ',da,' amount in ',accno)
+    global amount
+    amount=amount+da
+    print('Deposit Tx Done & Available Amount is:')
+    balance_check()
+
+def withdraw(wa):
+    print('trying to withdraw ',wa,' amount from ',accno)
+    global amount
+    if wa>amount:
+        print('Tx failed,Not Enough Balance')
+    else:
+        amount=amount-wa
+        print('Withdraw Tx Done & Available Amount is:')
+        balance_check()
+
+balance_check()
+print('---------------------------------------')
+deposit(500)
+print('---------------------------------------')
+withdraw(750)
+print('---------------------------------------')
+withdraw(8000)
+_____________________________________________________________________________
+
+4.keyword as argument:
+======================
+Ex5:
+
+#keyword as argument
+def total(i1,i2,i3):                 #i1,i2,i3 are positional parameters
+    print(i1+i2+i3)
+
+total(i1=10,i2=100,i3=1000)          #i1,i2,i3 are keywords as arguments
+
+_____________________________________________________________________________
+
+5.non-default parameter & default parameter:
+============================================
+Ex6:default parameter
+
+#called function
+def total(i1=0,i2=0,i3=100):      #i1,i2,i3 are positional parameters
+    print(i1+i2+i3)
+
+#calling function
+total(1,2,3)
+total()
+total(10)
+total(10,20)
+
+Ex6:#default parameter & non-default parameter
+
+#called function
+def total(i1,i2=200):      #i1 is non-default parameter & i2 is default parameter
+    print(i1+i2)
+
+#calling function
+total(10,20)
+total(100)
+total()   #TypeError: total() missing 1 required positional argument: 'i1'
+
+
+Note:
+=====
+#Invalid code for default parameters: non-default parameter follows default parameter
+
+def  one(a=10,b):			#Error
+    pass
+
+_____________________________________________________________________________
+
+6.arbitary parameters / variable length arguments:
+==================================================
+Ex7:arbitary parameters (variable length arguments)
+---
+def one(*p1):   #Here p1 is arbitary parameter
+    print('p1 type=',type(p1),' and p1 value=',p1)
+
+one(10,20)
+one(10,20,30)
+one(10,20,30,40)
+one(10,20,30,40,50)
+print('---------------------------------')
+one(1.2,1.3)
+one(1.2,1.3,1.4)
+
+
+Zomato Application:
+-------------------
+#arbitary parameters (variable length arguments)
+def totalprice(*items):
+    print('Your Ordered Items costs are:',items)
+    t=0
+    for i in items:
+        t=t+i
+    print('Total price is:',t)
+
+totalprice(10,20)
+print('-------------------------------')
+totalprice(10,20,30,40)
+print('-------------------------------')
+totalprice(10,20,30,40,50)
+
+_____________________________________________________________________________
+
+7.lambda functions /anonymous function:
+=======================================
+syntax:
+	variable =lambda   parameterlist :  returned result
+Ex8:
+===
+#Normal function
+def sum(a,b):
+    return (a+b)
+print(sum(10,20))
+
+#Lambda function
+'''
+syntax:
+	variable =lambda   parameterlist :  returned result
+'''
+v1=lambda a,b : a+b
+print(v1(10,20))
+v2=lambda a,b : a**b
+print(v2(2,10))
+v3=lambda a,b,c:(a+b+c)/3
+print(v3(20,30,50))
+v4=lambda a,b:a if a>b else b
+print(v4(100,50))
+
+
+_____________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

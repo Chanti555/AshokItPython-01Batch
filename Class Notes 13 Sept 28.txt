@@ -1,0 +1,140 @@
+Day13:
+======
+Python IDE's:
+=============
+IDE	->	Integreted Development Environment
+
+Development Environments
+		1.Writing Source Code
+		2.Debug Source Code
+		3.Compiling Source Code
+		4.Executing Source Code
+		5.Adding 3rd party depedencies 
+		6.Code intelligence
+Ex:
+	PyCharm,Atom,Eclipse,...
+
+Functional Programming in Python:
+==================================
+1.Non-Functional Programming Vs Functional Programming
+2.Non-Functional Programming Drawbacks
+3.Functional Programming Advantages
+4.Function definition , preparation & usage 
+
+Next Topics in Python Functions:
+********************************
+1.Function return type & parameter list 
+	1.Actual  Argument		
+	2.Formal/Positional  paramaters	
+2.Function preparation ways
+3.Local Vs Global variables & global keyword
+4.keyword as argument
+5.non-default parameter & default parameter
+6.arbitary parameters / variable length arguments
+7.lambda functions /anonymous function
+8.function address
+9.aliasing function
+10.nested / inner functions
+11.argument as function
+12.return type as function
+13.decorators			(*****)
+14.function vs method
+15.main function
+16.recursion
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.Function return type & parameter list :
+________________________________________
+
+	1.Actual  Argument		
+	2.Formal/Positional  paramaters	
+
+
+
+return type 	=> a function final output/result/outcome
+		=> use "return" keyword to return the result
+
+parameter list 	=> a function inputs are treated as parameter list 
+		
+Ex1:Sum of 2 numbers
+===
+
+#called function
+def sum(n1,n2):
+    res=n1+n2
+    return res
+
+#calling function
+a,b=100,200
+t1=sum(a,b)
+print(t1)
+
+2.Function preparation ways:
+____________________________
+
+Case1: A function has "n" input list		:	with parameter list
+Case2: A function has 0 input list		:	with out parameter list
+Case3: A function has return value		:	with return value
+Case4: A function does not has return value	:	with out return value
+
+A Function can be prepared in 4 ways based on parameter list & return value
+
+1.with parameter list & with return value
+2.with out parameter list & with out return value
+3.with parameter list & with out return value
+4.with out parameter list & with return value
+
+Ex2:Sum of 2 numbers
+===
+#PS: Sum of 2 numbers
+#1.with parameter list & with return value
+def sum1(a,b):
+    return (a+b)
+#2.with out parameter list & with out return value
+def sum2():
+    a,b=2,22
+    print(a+b)
+#3.with parameter list & with out return value
+def sum3(a,b):
+    print(a+b)
+#4.with out parameter list & with return value
+def sum4():
+    a,b=4,44
+    return (a+b)
+#calling functions
+t1=sum1(1,11)
+print(t1)
+sum2()
+sum3(3,33)
+t2=sum4()
+print(t2)
+
+
+
+PS1:power of a number	
+PS2:find area of circle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
