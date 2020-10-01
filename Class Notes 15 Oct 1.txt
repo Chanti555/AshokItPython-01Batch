@@ -1,0 +1,225 @@
+Day15:
+======
+Functional Programming in Python:
+==================================
+1.Non-Functional Programming Vs Functional Programming
+2.Non-Functional Programming Drawbacks
+3.Functional Programming Advantages
+4.Function definition , preparation & usage 
+
+Next Topics in Python Functions:
+********************************
+1.Function return type & parameter list 
+	1.Actual  Argument		
+	2.Formal paramaters/Positional  paramaters	
+2.Function preparation ways
+	4 approaches
+3.Local Vs Global variables & global(1) keyword  , pass(2) keyword
+4.keyword as argument		(keyword=value,..)	
+5.non-default parameter & default parameter
+6.arbitary parameters / variable length arguments	(* operator)
+7.lambda functions /anonymous function
+8.function address
+9.aliasing function
+10.nested / inner functions
+11.argument as function
+12.return type as function
+13.decorators			(*****)
+14.function vs method
+15.main function
+16.recursion
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+8.function address:
+===================
+For every function in python memory is allocated & if you want print that location, just print 
+function name.
+
+Ex9:
+
+def work1(a,b):
+    print(a+b)
+
+work1(10,20)
+#Printing function name
+print(work1)  #Address of function in hexadecimal  =><function work1 at 0x02DB40B8>
+
+def work2():
+    pass
+print(work2)  #Address of function in hexadecimal =><function work2 at 0x00DC40B8>
+
+
+
+9.Aliasing function:
+====================
+Giving another name to the function is called as Aliasing.
+
+Ex:
+---
+def work1(a,b):
+    print(a+b)
+
+work1(10,20)
+print(work1)
+#aliasing
+task1=work1
+print(task1)
+task1(100,200)
+work1(1000,2000)
+
+
+10.nested / inner functions:
+============================
+Note1=>
+	Preparing a function inside another function is called as nested / inner function.
+
+Representation:
+---------------
+def	functionname1():
+	
+		#body of function1
+
+	def	functionname2():
+
+			#body of function2
+
+		
+Ex1:
+-----
+def one():
+    print('outer function begins')
+    def two():
+        print('inner function begins')
+        print('Welcome')
+        print('inner function ends')
+    print('outer function ends')
+    two()
+one()
+
+
+Ex2:
+-----
+def cube(a):
+    def square(b):
+        return b*b
+    return a*square(a)
+
+print(cube(10))
+
+
+11.argument as function:
+========================
+Note2=>
+Here we are preparaing a function which has argument as another function
+
+Ex:
+---
+def sayHi():
+    return 'Hi Ashok'
+def sayBye():
+    return 'Bye Ashok'
+
+def doSomeThing(a,b,c,d):
+    print(a())
+    print(b+c)
+    print(d())
+
+doSomeThing(sayHi,20,30,sayBye)
+
+
+
+12.return type as function:
+===========================
+Note3=>
+Here we are preparaing a function which has return type as another function
+
+Ex:
+---
+def doSomeThing():
+    def inner1():
+        return 'Welcome'
+    return inner1()
+
+
+print(doSomeThing())
+
+
+13.Decorators:(Prerequisites are Note1,Note2,Note3)
+==============
+Def1:
+-----
+A decorator is a special function in python which 
+	1.Accepts function as argument
+	2.Returns value as function 
+
+Def2:
+-----
+A decorator is a function that takes "another function" and extends the behavior of 
+the latter function without explicitly modifying it.
+
+Ex1:Decarotar implementation without using @ operator
+----
+#decarator1
+def dec1(fun):
+    def inner(p):
+        r=fun(p)+1
+        return r
+    return inner
+
+#existing function
+def stage(a):
+    return a+a+100
+
+t=dec1(stage)
+print(t(10))
+print(t(20))
+
+Ex2:Decarotar implementation with using @ operator
+----
+#Decarotar implementation with using @ operator
+#decarator1
+def dec1(fun):
+    def inner(p):
+        r=fun(p)+1
+        return r
+    return inner
+#existing function
+@dec1
+def stage(a):
+    return a+a+100
+print(stage(100))
+
+Ex3:
+===
+#1.Prepare a decarator by adding 50/- of tip to the total bill
+def tip(fun):
+    def inner(a,b,c):
+        r=fun(a,b,c)+50
+        return r
+    return inner
+#2.Prepare a decarator by giving discount of 15% of the total bill
+def discount(fun):
+    def inner(p,q,r):
+        disc=((100-15)*fun(p,q,r))/100
+        return disc
+    return inner
+#3.Prepare a decarator by adding of 20% of GST to the total bill
+
+
+#existing function
+@tip
+@discount
+def totalprice(i1,i2,i3):
+    return (i1+i2+i3)
+
+print(totalprice(200,300,500))
+
+
+
+
+
+
+
+
+
+
+
