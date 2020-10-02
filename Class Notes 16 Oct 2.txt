@@ -1,0 +1,208 @@
+Day16:
+======
+1.Function return type & parameter list 
+	1.Actual  Argument		
+	2.Formal paramaters/Positional  paramaters	
+2.Function preparation ways
+	4 approaches
+3.Local Vs Global variables & global(1) keyword  , pass(2) keyword
+4.keyword as argument		(keyword=value,..)	
+5.non-default parameter & default parameter
+6.arbitary parameters / variable length arguments	(* operator)
+7.lambda functions /anonymous function
+8.function address
+9.aliasing function
+10.nested / inner functions
+11.argument as function
+12.return type as function
+13.decorators			(*****)
+14.function vs method
+15.main function
+16.recursion
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+14.function vs method:
+======================
+
+1.Program for function:
+_______________________
+#Called function
+def one():
+    print('I am function')
+
+#Calling Function
+one()
+
+
+2.Program for method:
+_____________________
+If a function prepared inside class then it is called as method
+Ex:
+
+class MyClass1:
+    #Called method
+    def one(self):
+        print('I am method')
+
+
+#object creation
+ob=MyClass1()
+#Calling method
+ob.one()
+
+
+
+15.main function:
+=================
+1.All other(c/cpp/java) languages source code execution starts from main() function.
+2.In All other(c/cpp/java) languages main() function is prepared by USER,where as calling by Compiler(C,CPP)/Interpreter(Java).
+Ex:
+	void	main()
+	{
+		printf("Hello");
+	}
+
+3.In Python language source code executed line by line by PVM.(No entry point is fixed)
+4.Suppose if user want to make an entry point then only user has to prepare main() function in python.
+5.In python main() function is prepared by USER & Calling by USER itself.
+Syntax:
+	#Preparation of main()
+
+	def	main():
+		#body of main
+
+	#Usage of main()
+
+	if __name__ == '__main__':
+		main()
+
+Ex1:
+
+def main():
+    print('Hello from main')
+
+if __name__== '__main__':
+    main()
+
+Ex2:
+
+print('1')
+print('2')
+def task1():
+    print('task1 function body')
+def task2():
+    print('task2 function body')
+def main():
+    print('Hello from main')
+    task1()
+    task2()
+if __name__== '__main__':
+    main()
+print('3')
+
+Ex3: Aliasing main function
+
+
+def chanti():
+    print('Welcome to Python functions')
+
+if __name__=='__main__':
+    chanti()
+
+Ex4:
+
+if __name__=='__main__':
+    print('Welcome')
+
+16.Recursion:
+=============
+A function calling itself is called as recursion.
+
+representation:
+
+	#called function
+	def	one():
+		#statement1
+		#statement2
+		#statement3
+		....
+		#calling function
+		one()
+		
+	#calling function
+	one()
+	
+Ex1: Basic example	
+
+def dowork1():
+    print('Doing work1')
+    dowork1()       #recursion calling
+
+if __name__=='__main__':
+    dowork1()
+
+Output:
+______
+Doing work1
+Doing work1
+Doing work1
+Doing work1
+Doing work1
+Doing work1
+Doing work1
+Doing work1
+Doing work1
+...............
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+
+Ex2:#PS:sum of n natural numbers without recursion
+
+
+def naturalnumbers(n):
+    s=0
+    for i in range(1,n+1):
+        s=s+i
+    print(s)
+
+if __name__=='__main__':
+    naturalnumbers(6)
+
+Ex3:#PS:sum of n natural numbers with recursion
+def naturalnumbers(n):
+    if n==1:
+        return n
+    else:
+        return n+naturalnumbers(n-1)   #6+5
+
+if __name__=='__main__':
+    print(naturalnumbers(6))
+
+Case1: factorial of a number (with out & with recursion)
+	5:	5*4*3*2*1
+
+Case2: merge sort	(with out & with recursion)
+	8,5,10,3,7,9,15
+
+	5,8,10,3,7,9,15
+
+	5,8,10,3,7,9,15
+
+	5,8,3,10,7,9,15
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
