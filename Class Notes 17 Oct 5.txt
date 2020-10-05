@@ -1,0 +1,193 @@
+Day17:
+
+myname1='Chanti'
+myname2="Chanti"
+myname3='''Chanti'''
+myname4="""Chanti"""
+
+String & String handling Functions:
+===================================
+Array of characters enclosed with in single quotes/double quotes is called as String
+String index always starts with ZERO
+
+1.String Representation
+2.String Immutable object
+3.String Handling Functions
+4.String Operations	
+	1.Concatenation  	(+)
+	2.Repeatation  		(*)
+	3.Indexing 		(+/-)
+	4.Slicing 		(:)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3.String Handling Functions:
+____________________________
+
+Function Name		Description
+-------------		------------
+1.lower()		returns lowercased string
+2.upper()  		returns uppercased string
+3.title()  		Returns a Title Cased String
+4.swapcase()		swap uppercase characters to lowercase; vice versa
+5.capitalize()		Converts first character to Capital Letter
+
+6.strip()		Removes Both Leading and Trailing Characters
+7.rstrip()		Removes Trailing Characters
+8.lstrip()		Removes Leading Characters
+
+9.endswith()		Checks if String Ends with the Specified Suffix
+10.startswith()		Checks if String Starts with the Specified String
+
+11.find()		Returns the index of first occurrence of substring
+12.rfind()		Returns the Highest Index of Substring
+
+13.center()		Returns a centered string
+14.ljust()		returns left-justified string of given width
+15.rjust()		returns right-justified string of given width
+
+16.count()		returns occurrences of substring in string
+17.split()		Splits String from Left
+18.replace()		Replaces Substring Inside
+19.join()		Returns a Concatenated String
+20.index()		Returns Index of Substring
+21.format()		formats string into nicer output
+
+22.isalpha()		Checks if All Characters are Alphabets
+23.isdigit()		Checks Digit Characters
+24.isalnum()		Checks Alphanumeric Character
+25.istitle()		Checks for Titlecased String
+26.isupper()		returns if all characters are uppercase characters
+27.islower()		Checks if all Alphabets in a String are Lowercase
+28.isspace()		Checks Whitespace Characters
+
+29.min()		Returns max ASCII value character
+30.max()		Returns min ASCII value character
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4.String operations:
+====================
+1.concatenation  (+)
+2.repeatation  (*)
+3.Indexing (+/-)
+4.slicing (:)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SHELL DATA:
+-----------
+
+>>> 'learn python from Ashok It'.lower()
+'learn python from ashok it'
+>>> 'learn python from Ashok It'.upper()
+'LEARN PYTHON FROM ASHOK IT'
+>>> 'learn python from Ashok It'.title()
+'Learn Python From Ashok It'
+>>> 'learn python from Ashok It'.swapcase()
+'LEARN PYTHON FROM aSHOK iT'
+>>> 'learn python from Ashok It'.capitalize()
+'Learn python from ashok it'
+>>> '       mailtochanti55@gmail.com       '.strip()
+'mailtochanti55@gmail.com'
+>>> '       mailtochanti55@gmail.com       '.rstrip()
+'       mailtochanti55@gmail.com'
+>>> '       mailtochanti55@gmail.com       '.lstrip()
+'mailtochanti55@gmail.com       '
+>>> 'Ashok It'.startswith('Ash')
+True
+>>> 'Ashok It'.startswith('It')
+False
+>>> 'Ashok It'.endswith('It')
+True
+>>> 'Banana'.find('B')
+0
+>>> 'Banana'.find('a')
+1
+>>> 'Banana'.rfind('a')
+5
+>>> 'Banana'.rfind('z')
+-1
+>>> 'Banana'.find('z')
+-1
+>>> 'Hi'.center(10)
+'    Hi    '
+>>> 'Hi'.ljust(10)
+'Hi        '
+>>> 'Hi'.rjust(10)
+'        Hi'
+>>> 'Banana'.count('a')
+3
+>>> 'Banana'.count('n')
+2
+>>> 'Banana'.count('B')
+1
+>>> 'Banana'.count('z')
+0
+>>> 'Hi friends how are you'.split(' ')
+['Hi', 'friends', 'how', 'are', 'you']
+>>> 'Hi@friends@how@are@you'.split('@')
+['Hi', 'friends', 'how', 'are', 'you']
+>>> 'Java is Simple'.replace('Java','Python')
+'Python is Simple'
+>>> ' '.join('CHANTI')
+'C H A N T I'
+>>> ','.join('CHANTI')
+'C,H,A,N,T,I'
+>>> '$'.join('CHANTI')
+'C$H$A$N$T$I'
+>>> 'chanti'.index('a')
+2
+>>> 'chanti'.index('i')
+5
+>>> 'chanti'.index('z')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> name='Ram'
+>>> v='My Name is {}'.format(name)
+>>> v
+'My Name is Ram'
+>>> a,b=10,20
+>>> c=a+b
+>>> res='Addition of {} and {} is : {}'.format(a,b,c)
+>>> res
+'Addition of 10 and 20 is : 30'
+>>> res='Addition of {0} and {1} is : {2}'.format(a,b,c)
+>>> res
+'Addition of 10 and 20 is : 30'
+>>> 'q'.isalpha()
+True
+>>> '2'.isalpha()
+False
+>>> '2'.isdigit()
+True
+>>> 'w'.isdigit()
+False
+>>> 'w'.isalnum()
+True
+>>> '5'.isalnum()
+True
+>>> '&'.isalnum()
+False
+>>> 'Python is Simple'.istitle()
+False
+>>> 'Python Is Simple'.istitle()
+True
+>>> 'python'.islower()
+True
+>>> 'python'.isupper()
+False
+>>> ' '.isspace()
+True
+>>> min('Apple')
+'A'
+>>> max('Apple')
+'p'
+>>> len('Apple')
+5
+>>>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
